@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@drawable/bgc"
+
+  >
+  <!--  <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/giphy"
+        />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Bhojpur"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:textColor="#ffffff"
+        android:textSize="70sp"
+        android:layout_margin="50dp"
+        android:id="@+id/logo"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+android:gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical">
+
+    <!--    <EditText
+            android:id="@+id/username"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:background="@drawable/ecclipse"
+            android:gravity="center"
+            android:hint="Username"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ecclipse"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword" />-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            >
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Username"
+android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:id="@+id/e1"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Password"
+                android:textColor="#ffffff"
+                android:inputType="textPassword"
+                android:textColorHint="#ffffff"
+                android:id="@+id/e2"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:background="@drawable/eclipseblue"
+            android:text="Login"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:elevation="10dp"
+            />
+
+        <!--<Button
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:background="#f20b0b"
+
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:id="@+id/b1"
+            android:layout_marginTop="10dp"/>-->
+
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:id="@+id/empoweruweb"
+         android:layout_width="fill_parent"
+         android:layout_height="38dp"
+         android:layout_alignParentBottom="true"
+         android:background="#000000"
+         android:orientation="horizontal"
+         android:gravity="center">
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="10dp"
+           android:clickable="false"
+           android:gravity="center"
+           android:text="Powered by : "
+           android:textColor="#ffffff"
+           android:textSize="18dp"
+           android:textStyle="bold">
+
+       </TextView>
+
+       <ImageButton
+           android:id="@+id/empoweru"
+           android:layout_width="35dp"
+           android:layout_height="30dp"
+           android:layout_gravity="center"
+           android:background="@null"
+           android:paddingLeft="7dp"
+           android:paddingTop="5dp"
+           android:paddingRight="2dp"
+           android:paddingBottom="5dp"
+           android:scaleType="fitXY"
+           android:src="@drawable/logo">
+
+       </ImageButton>
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:text="EmpowerU.in"
+           android:textColor="#ffffff"
+           android:textSize="18dp"
+           android:textStyle="bold">
+
+       </TextView>
+
+     </LinearLayout>-->
+
+</RelativeLayout>

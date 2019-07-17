@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.utsav.bhojpuri"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.example.utsav.bhojpuri.MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.utsav.bhojpuri.Splash_Screen"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.utsav.bhojpuri.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.TeacherDash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.CRPDash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.UserProfile"
+            android:parentActivityName="com.example.utsav.bhojpuri.TeacherDash" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.Grievance"
+            android:parentActivityName="com.example.utsav.bhojpuri.TeacherDash" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.Leave"
+            android:parentActivityName="com.example.utsav.bhojpuri.TeacherDash" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.ScannerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.ScannerList"
+            android:parentActivityName="com.example.utsav.bhojpuri.ScannerActivity" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.Dummydash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.UserProfileCluster"
+            android:parentActivityName="com.example.utsav.bhojpuri.TeacherDash" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.B_Survey"
+            android:parentActivityName="com.example.utsav.bhojpuri.CRPDash" />
+        <activity
+            android:name="com.example.utsav.bhojpuri.Q_Activity"
+            android:parentActivityName="com.example.utsav.bhojpuri.TeacherDash" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.utsav.bhojpuri.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

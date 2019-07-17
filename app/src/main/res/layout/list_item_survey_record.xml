@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:elevation="10dp"
+    android:layout_margin="5dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="School name: xyz test"
+        android:id="@+id/school_name_survey_record"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wed, 14 jun 2019, 10:30:22 AM"
+        android:id="@+id/timestamp_survey_record"
+        android:textSize="14dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sync_survey_record"
+        android:text="Sync"
+        android:textColor="#fff"
+        android:background="@drawable/bg_submit"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="left"/>
+
+</LinearLayout>
